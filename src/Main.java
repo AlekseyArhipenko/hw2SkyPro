@@ -31,6 +31,11 @@ public class Main {
         var totalWeightOfFighters = weightOfOneBoxer + weightOfTheSecondBoxer;
         System.out.println("Общий вес бойцов " +  totalWeightOfFighters + " кг");
         var weightDifference = weightOfOneBoxer - weightOfTheSecondBoxer;
-        System.out.println("Разница в весе бойцов составляет " + weightDifference + " кг" );
+        System.out.println("Разница в весе бойцов составляет " + weightDifference + " кг");
+
+        weightDifference = Math.max(weightOfOneBoxer, weightOfTheSecondBoxer) - Math.min(weightOfOneBoxer, weightOfTheSecondBoxer);
+        System.out.println("Разница в весе бойцов составляет " + weightDifference + " кг");
+        weightDifference = Math.max(weightOfOneBoxer, weightOfTheSecondBoxer) % Math.min(weightOfOneBoxer, weightOfTheSecondBoxer);
+        System.out.println("Разница в весе бойцов составляет " + weightDifference + " кг");
     }
 }
