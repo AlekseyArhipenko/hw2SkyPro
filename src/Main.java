@@ -37,5 +37,15 @@ public class Main {
         System.out.println("Разница в весе бойцов составляет " + weightDifference + " кг");
         weightDifference = Math.max(weightOfOneBoxer, weightOfTheSecondBoxer) % Math.min(weightOfOneBoxer, weightOfTheSecondBoxer);
         System.out.println("Разница в весе бойцов составляет " + weightDifference + " кг");
+
+        var totalWorkingHours = 640;
+        var workingHours = 8;
+        var staff = totalWorkingHours / workingHours;
+        System.out.println("Всего работников в компании " + staff + " человек");
+        var totalStaff = staff + 94;
+        var numberOfWorkingHours = totalWorkingHours / totalStaff;
+        System.out.println("Если в компании работает " + totalStaff + " человек, то всего " + numberOfWorkingHours +
+        " часов работы может быть поделено между сотрудниками");
+
     }
 }
